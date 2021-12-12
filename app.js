@@ -12,7 +12,7 @@ function setQuery(event) {
 // Fetching Data From OpenWeather API
 function getResults(query) {
  fetch(
-  `http://api.openweathermap.org/data/2.5/weather?units=imperial&q=${query}&APPID=${apiKey}`
+  `https://cors-anywhere.herokuapp.com/http://api.openweathermap.org/data/2.5/weather?units=imperial&q=${query}&APPID=${apiKey}`
  )
   .then(response => {
    return response.json();
