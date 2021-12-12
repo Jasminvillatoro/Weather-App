@@ -8,16 +8,16 @@ html {
  min-height: 100%;
 }
 body {
- background: #d14a77; /* fallback for old browsers */
+ background: #f5a2bd; /* fallback for old browsers */
  background: -webkit-linear-gradient(
   to bottom,
   #ecdf6a,
-  #f07da3
+  #f5a2bd
  ); /* Chrome 10-25, Safari 5.1-6 */
  background: linear-gradient(
   to bottom,
   #ecdf6a,
-  #f07da3
+  #f5a2bd
  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
@@ -42,7 +42,7 @@ header {
  font-family: 'Roboto', sans-serif;
 }
 header input:focus {
- background-color: rgba(212, 105, 150, 0.9);
+ background-color: rgba(229, 147, 181, 0.6);
 }
 main {
  text-align: center;
@@ -56,6 +56,7 @@ section {
 .city {
  font-family: 'Roboto', sans-serif;
  font-size: 40px;
+ font-weight: 500;
  text-shadow: 1px 1px #776e71;
  padding: 10px;
 }
@@ -64,12 +65,14 @@ section {
  padding: 40px;
  font-size: 30px;
  font-family: 'Roboto', sans-serif;
+ font-weight: 400;
  text-shadow: 1px 1px #776e71;
 }
 
 .temperature {
  font-family: 'Roboto', sans-serif;
  font-size: 30px;
+ font-weight: 400;
  padding: 25px;
  text-shadow: 1px 1px #776e71;
 }
