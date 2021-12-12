@@ -1,5 +1,6 @@
 const apiKey = '42e3978119d72ed084eb89f268191846';
 // Selecting searcbox
+
 const searchbox = document.querySelector('.search-box');
 searchbox.addEventListener('keypress', setQuery);
 
@@ -16,7 +17,6 @@ function getResults(query) {
   .then(response => {
    return response.json();
   })
-  .catch(error => console.error('FETCH ERROR:', error))
   .then(displayResults); // Calling Function
 }
 /* This Function Displays weather data we got from the Json Object using
