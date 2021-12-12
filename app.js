@@ -6,7 +6,6 @@ searchbox.addEventListener('keypress', setQuery);
 function setQuery(event) {
  if (event.keyCode === 13) {
   getResults(searchbox.value);
-  console.log(searchbox.value);
  }
 }
 // Fetching Data From OpenWeather API
@@ -17,8 +16,10 @@ function getResults(query) {
   .then(response => {
    return response.json();
   })
-  .then(displayResults);
+  .then(displayResults); // Calling Function
 }
+/* This Function Displays weather data we got from the Json Object using
+ .notation to access object properties */
 
 function displayResults(weather) {
  let city = document.querySelector('.location .city');
