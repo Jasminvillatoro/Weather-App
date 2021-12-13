@@ -1,12 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Italiana&family=Roboto&display=swap');
+
 * {
  margin: 0;
  padding: 0;
  box-sizing: border-box;
 }
+
 html {
  min-height: 100%;
 }
+
 body {
  background: #f5a2bd; /* fallback for old browsers */
  background: -webkit-linear-gradient(
@@ -25,9 +28,7 @@ header {
  text-align: center;
  padding: 40px;
 }
-::placeholder {
- color: #000;
-}
+
 .search-box {
  width: 50%;
  padding: 8px 12px;
@@ -41,9 +42,11 @@ header {
  transition: 0.2s ease-out;
  font-family: 'Roboto', sans-serif;
 }
+
 header input:focus {
  background-color: rgba(229, 147, 181, 0.6);
 }
+
 main {
  text-align: center;
  padding: 20px;
