@@ -1,5 +1,5 @@
 const apiKey = '42e3978119d72ed084eb89f268191846';
-// Selecting searcbox
+// Selecting searchbox
 
 const searchbox = document.querySelector('.search-box');
 searchbox.addEventListener('keypress', setQuery);
